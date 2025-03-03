@@ -1,0 +1,6 @@
+const contacts = [
+  { name: 'John Doe', phone: '123-456-7890', email: 'john@example.com' },
+  { name: 'Jane Smith', phone: '987-654-3210', email: 'jane@example.com' },
+];
+
+export default contacts;

@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #E6DFC8; /* Beige claro */
+}
+
+#root {
+  max-width: 1280px; /* Ajustar el ancho máximo del contenedor */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding-top: 5rem; /* Add padding to avoid content being hidden behind the fixed header */
+}
+
+header {
+  background-color: #00A19A; /* Turquesa */
+  color: white;
+  padding: 0.1rem; /* Reducir padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ajustar el z-index para que se muestre encima de la lista de contactos */
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.app-container {
+  max-width: 1280px;
+  margin: 0 auto; /* Centrar el contenedor en el centro de la página */
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 6rem; /* Añadir margen superior */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem; /* Añadir margen superior */
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0; /* Reducir padding */
+  width: 100%;
+  margin-top: -30%;
+}
+
+.contact-list li {
+  background-color: #8f8d8d;
+  margin: 0.5rem 0;
+  padding: 1rem; /* Añadir padding */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.contact-list li:hover {
+  background-color: #006E80; /* Azul petróleo */
+}
+
+.contact-detail {
+  width: 35%;
+  position: absolute;
+  left: 2rem; /* Mover hacia el lado izquierdo */
+  top: 10rem; /* Ajustar la posición superior según sea necesario */
+  text-align: left;
+  background-color: #fff; /* Fondo blanco para diferenciar del fondo */
+  padding: 1rem; /* Añadir padding */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de card */
+}
+
+.contact-detail h2 {
+  font-size: 1.5rem;
+  color: #002E5D; /* Azul marino oscuro */
+}
+
+.contact-detail p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #e4e2e2;
+}
