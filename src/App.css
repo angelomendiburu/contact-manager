@@ -110,6 +110,42 @@ nav ul li a:hover {
   color: #666;
 }
 
+.contact-pinned {
+  width: 35%;
+  position: absolute;
+  left: 2rem; /* Mover hacia el lado izquierdo */
+  top: 10rem; /* Ajustar la posición superior según sea necesario */
+  text-align: left;
+  background-color: #fff; /* Fondo blanco para diferenciar del fondo */
+  padding: 1rem; /* Añadir padding */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de card */
+}
+
+.contact-pinned h2 {
+  font-size: 1.5rem;
+  color: #002E5D; /* Azul marino oscuro */
+}
+
+.contact-pinned p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.contact-pinned button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #00A19A; /* Turquesa */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-pinned button:hover {
+  background-color: #006E80; /* Azul petróleo */
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
